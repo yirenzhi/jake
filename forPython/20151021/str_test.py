@@ -1,4 +1,5 @@
-#！encoding=utf-8
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 print('I\'m\"OK\"')
 print("I\'m\"OK\"")
 print r'\\\\\\\\'#当\为单数时有问题！！
