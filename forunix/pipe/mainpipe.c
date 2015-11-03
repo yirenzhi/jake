@@ -1,5 +1,5 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <string.h>
@@ -36,16 +36,20 @@ void client(int readfd,int writefd)
     size_t  len;
     ssize_t n;
     char    buff[MAXLINE];
-
-    fgets(buff,MAXLINE,stdin);
-    len = strlen(buff);
-    if(buff[len-1]=='\n')
+    while(1)
     {
-        len--;
+        //printf("client------------\n");
+        fgets(buff,MAXLINE,stdin);
+        len = strlen(buff);
+        if(buff[len-1]=='\n')
+        {
+            len--;
+        }
+        write(writefd,buff,len);
+        if((n=read(readfd,buff,MAXLINE))>0)
+            write(STDOUT_FILENO,buff,n);
+        //printf("afterread");
     }
-    write(writefd,buff,len);
-    while((n=read(readfd,buff,MAXLINE))>0)
-        write(STDOUT_FILENO,buff,n);
 }
 
 void server(int readfd,int writefd)
@@ -53,26 +57,29 @@ void server(int readfd,int writefd)
     int fd;
     ssize_t n;
     char    buff[MAXLINE+1];
-
-    if((n=read(readfd,buff,MAXLINE))==0)
+    while(1)
     {
-        printf("end-of-file while reading pathname");
-        return;
-    }
-    buff[n]='\0';
-
-    if((fd=open(buff,O_RDONLY))<0)
-    {
-        snprintf(buff+n,sizeof(buff)-n,":can't open,%s\n",strerror(errno));
-        n=strlen(buff);
-        write(writefd,buff,n);
-    }
-    else{
-        while((n=read(fd,buff,MAXLINE))>0)
+        //printf("server-----------\n");
+        if((n=read(readfd,buff,MAXLINE))==0)
+        {
+            printf("end-of-file while reading pathname");
+            //continue;
+        }
+        buff[n]='\0';
+        //printf("buff=%s\n",buff);
+        if((fd=open(buff,O_RDONLY))<0)
+        {
+            snprintf(buff+n,sizeof(buff)-n,":can't open,%s\n",strerror(errno));
+            n=strlen(buff);
             write(writefd,buff,n);
-        close(fd);
-
+        }
+        else{
+            while((n=read(fd,buff,MAXLINE))>0)
+                write(writefd,buff,n);
+          //  printf("beforeclose------\n");
+            close(fd);
+          //  printf("afterclose-------\n");
+        }
     }
-
 }
 
