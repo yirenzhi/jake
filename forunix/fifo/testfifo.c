@@ -9,7 +9,7 @@
 int main(int argc, char const *argv[])
 {
 	mkfifo("./fifo1",0777);
-
+	mkfifo("./fifo2",0777);
 
 	return 0;
 }

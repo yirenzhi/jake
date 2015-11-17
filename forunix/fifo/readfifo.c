@@ -13,10 +13,33 @@ int main(int argc, char const *argv[])
     ssize_t n;
     char    buff[MAXLINE];
     int readfd=open("./fifo1",O_RDONLY,0);
+    int writefd=open("./fifo2",O_WRONLY,0);
+
+    if (fork()==0)//chilren
+    {
+        while(1)
+        {
+            //printf("client------------\n");
+            fgets(buff,MAXLINE,stdin);
+            len = strlen(buff);
+            if(buff[len-1]=='\n')
+            {
+                len--;
+            }
+            write(writefd,buff,len);
+        }
+    }
+
     while(1)
     {
         if((n=read(readfd,buff,MAXLINE))>0)
-            write(STDOUT_FILENO,buff,n);
+        {    int writefd=open("./fifo1",O_WRONLY,0);
+
+            buff[n]='\0';
+            buff[n+1]='\n';
+            fputs("other:",stdout);
+            write(STDOUT_FILENO,buff,n+2);
+        }
     }
 	return 0;
 }
