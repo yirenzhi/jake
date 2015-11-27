@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>testform</title>
+</head>
+<body>
+<form action="">
+    名：
+    <input type="text" name="firstname">
+    <br/>
+    姓：
+    <input type="text" name="lastname">
+</form>
+
+<form action="">
+    用户：
+    <input type="text">
+    <br/>
+    密码：
+    <input type="password">
+</form>
+<p>请注意，当您在密码域中键入字符时，浏览器将使用项目符号来代替这些字符</p>
+<p>当选按钮：</p>
+
+<form action="">
+    <input type="radio" name="sex" value="male"/> Male
+    <br/>
+    <input type="radio" name="sex" value="female" /> Female
+</form>
+<form action="">
+    <input type="checkbox" name="bike"/> I have a bike
+    <br/>
+    <input type="checkbox" name="car"/> I have a car
+</form>
+<form action="html_form_action.asp" method="get">
+    Username:
+    <input type="text" name="user">
+    <input type="submit" value="检测">
+</form>
+下拉列表：
+<form action="">
+    <select name="cars" id="">
+        <option value="A">a</option>
+        <option value="B">b</option>
+        <option value="C">c</option>
+        <option value="D">d</option>
+        <option value="E">e</option>
+    </select>
+</form>
+带预选值的下拉列表
+<form action="">
+    <select name="" id="">
+        <option value="">a</option>
+        <option value="">b</option>
+        <option value="">c</option>
+        <option value="" selected="selected">d</option>
+        <option value="">e</option>
+    </select>
+</form>
+文本框：
+<form action="">
+    <textarea name="" id="" cols="30" rows="10">the cat was playing in the garden</textarea>
+</form>
+表单周围加带标题的框
+<form action="">
+    <fieldset>
+        <legend>健康信息</legend>
+        身高：<input type="text"/>
+        <br/>
+        体重：<input type="text"/>
+    </fieldset>
+</form>
+<h3>发个邮件给yiren_zhi@163.com</h3>
+
+<form action="MAILTO: yiren_zhi@163.com" method="post" enctype="text/plain">
+    姓名：<br/>
+    <input type="text" value="yourname" size="20"/>
+    电邮：<br/>
+    <input type="text" value="youremail" size="20"/>
+    内容：<br/>
+    <input type="text" value="youcomment" size="40"/>
+    <br/><br/>
+    <input type="submit" value="发送">
+    <input type="reset" value="重置">
+</form>
+</body>
+</html>
