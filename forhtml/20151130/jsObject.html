@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jsObject</title>
+</head>
+<body onload="testOclock()">
+<script>
+    function testDate()
+    {
+        document.getElementById("date").innerHTML=Date();
+    }
+</script>
+<h1>获得当日日期</h1>
+<p name="date" id="date">&nbsp;</p>
+<button onclick="testDate()">点击这里</button>
+
+<script>
+    function testOclock()
+    {
+        var date=new Date();
+        var hour=date.getHours();
+        var minute=date.getMinutes();
+        var second=date.getSeconds();
+        hour=checkTime(hour);
+        minute=(minute);
+        second=checkTime(second)
+        document.getElementById("date1").innerHTML=(hour+":"+minute+":"+second);
+        setTimeout("testOclock()",500);
+    }
+    function checkTime(i)
+    {
+        if (i<10)
+        {i="0"+i;}
+        return i;
+    }
+</script>
+<h1>显示钟表</h1>
+<p name="date1" id="date1">&nbsp;</p>
+
+
+</body>
+</html>

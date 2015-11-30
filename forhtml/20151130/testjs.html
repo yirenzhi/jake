@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>testjs</title>
+</head>
+<body>
+<p>JavaScript 能够直接写入 HTML 输出流中</p>
+<script>
+    document.write("<h1>This is a heading</h1>");
+    document.write("<p>This is a paragraph</p>");
+</script>
+<p>
+    你只能在 HTML 输出流中使用<strong>document.write</strong>。
+    如果您在文档已加载后使用它（比如在函数中），会覆盖整个文档。
+</p>
+<h1>我的第一段 JavaScript</h1>
+<p>JavaScript 能够对事件作出反应。比如对按钮的点击：</p>
+<button type="button" onclick="alert('Welcome')">点击这里</button>
+
+
+<h1>我的第二段 JavaScript </h1>
+<p id="demo">JavaScrpt 能改变 HTML 元素的内容</p>
+<script>
+    function myFunction()
+    {
+        x=document.getElementById("demo"); //找到元素
+        x.innerHTML="Hello JavaScript!";    //改变元素
+
+    }
+</script>
+<button type="button" onclick="myFunction()">
+    点击这里
+</button>
+
+<h1>我的第三段 JavaScript</h1>
+<p>点击灯泡点亮或熄灭这盏灯</p>
+<script>
+    function changeImage()
+    {
+        x=document.getElementById("image");
+        if (x.src.match("bulboff"))
+        {
+            x.src="./eg_bulbon.gif";
+        }
+        else
+        {
+            x.src="./eg_bulboff.gif";
+        }
+    }
+</script>
+<img src="./eg_bulboff.gif" onclick="changeImage()" id="image">
+
+<h1>我的第四段 JavaScript</h1>
+<p id="teststyle">js 能改变html元素的样式</p>
+<script>
+    function changestyle()
+    {
+        x=document.getElementById("teststyle");
+        x.style.color="#ff0000";
+    }
+</script>
+<button  onclick="changestyle()">点击这里</button>
+
+<h1>我的第五段js</h1>
+<p>请输入数字，如果输入值不是数字，浏览器会弹出提示框。</p>
+<input id="testtext" type="text">
+<button onclick="checknum()">点击这里</button>
+<script>
+    function checknum()
+    {
+        var x=document.getElementById("testtext").value;
+        if (x==""||isNaN(x))//判断为空或者不是数字
+        {
+            alert("Not Numeric!");
+        }
+    }
+</script>
+
+<h1>外部的javascript</h1>
+<script type="text/javascript" src="./firstjs.js"></script>
+<p id="demo0">A Paragraph</p>
+<button onclick="changetext()">点击这里</button>
+
+<h1>js算数</h1>
+<p>假设y=5,计算x=y+2,并显示结果</p>
+<button onclick="testCount()">点击这里</button>
+<p id="demo2">&nbsp;</p>
+
+<h1>函数参数</h1>
+<button onclick="testParameter('Bill Gates','CEO')">点击这里</button>
+
+<h1>计算乘积</h1>
+<input id="number1" type="text" name="number1">
+<input id="number2" type="text" name="number2">
+
+<button onclick=" document.getElementById('demo3').innerHTML= testreturn(number1.value,number2.value)">点击这里</button>
+<!--<button onclick=" number3.innerHTML = testreturn(number1.value,number2.value)">点击这里</button>-->
+<!--<button onclick="number3.innerHTML=testreturn(number1.value,number2.value)">点击这里</button>-->
+
+<br>
+计算结果为：
+<p id="demo3" name="number3">&nbsp</p>
+
+<h1>while循环</h1>
+<script>
+    function testwhile()
+    {
+        var x="",i=0;//如果不把x的值初始化为空,则它会等于undefine
+        while (i<5) {
+            x = x + "The number is " + i + "<br>";
+            i++;
+        }
+//        document.write(x);
+        document.getElementById("demo4").innerHTML=x;
+    }
+</script>
+<button onclick="testwhile()">点击这里</button>
+<p id="demo4">&nbsp;</p>
+
+<h1>testTry</h1>
+<p>Please input a number between 5 and 10:</p>
+<script>
+    function testtry()
+    {
+        try
+        {
+            var x=document.getElementById("demo6").value;
+            if (x=="")          throw "empty";
+            else if(isNaN(x))   throw "Not a number";
+            else if(x>10)       throw "It is too high";
+            else if(x<5)        throw "too low";
+        }
+        catch (err)
+        {
+           document.getElementById("descrip").innerHTML="Error:"+err;
+        }
+    }
+</script>
+<input id="demo6" type="text">
+<button onclick="testtry()">Test Input</button>
+<p id="descrip">&nbsp;</p>
+
+<h1>验证邮箱</h1>
+<script type="text/javascript">
+
+    function validate_required(field,alerttxt)
+    {
+        with (field)
+        {
+            var apos=value.indexOf("@");
+            dotpos=value.lastIndexOf(".");
+            if (apos<1||dotpos-apos<2)
+            {
+                alert(alerttxt);
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+    }
+
+    function validate_form(thisform)
+    {
+        with (thisform)
+        {
+            if (validate_required(email,"Email must be filled out!")==false)
+            {email.focus();return false}
+        }
+    }
+</script>
+
+<form action="submitpage.htm" onsubmit="return validate_form(this)" method="post">
+    Email: <input type="text" name="email" size="30">
+    <input type="submit" value="Submit">
+</form>
+
+<h1>DOM事件</h1>
+<div onmouseover="mOver(this)" onmouseout="mOut(this)" style="background-color: green;
+width:120px;height: 20px;padding: 40px ;color: #ffffff;">把鼠标移到上面</div>
+<script>
+function mOver(obj)
+{
+    obj.innerHTML="谢谢";
+}
+function mOut(obj)
+{
+    obj.innerHTML="把鼠标移到上面"
+}
+</script>
+
+<h1>添加删除元素</h1>
+<div id="div1">
+<p id="p1">这是一个段落</p>
+<p id="p2">这是另一个段落</p>
+</div>
+<script>
+    function addelement()
+    {
+        var para=document.createElement("p");
+        var node=document.createTextNode("这是新段落");
+        para.appendChild(node);
+        var element=document.getElementById("div1");
+        element.appendChild(para);
+    }
+    function delelement()
+    {
+        var parent=document.getElementById("div1")
+        var child=document.getElementById("p1");
+        parent.removeChild(child);
+    }
+</script>
+<button onclick="addelement()">添加元素</button>
+<button onclick="delelement()">删除元素</button>
+
+
+
+</body>
+</html>
