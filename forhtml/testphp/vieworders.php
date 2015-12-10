@@ -28,6 +28,7 @@ define('ROOT',"$DOCUMENT_ROOT/orders/orders.txt");
     {
         $order=fgets($fp,999);
         echo $order."<br/>";
+        //fclose($fp);
     }
 
 //    $order=readfile("$DOCUMENT_ROOT/../orders/orders.txt");

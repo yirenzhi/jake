@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b72e032-a8ed-4df6-b01b-466c30b585fa" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../awesome-python-webapp/readme" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../awesome-python-webapp/www/transwarp/db.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testphp/vieworders.php" afterPath="$PROJECT_DIR$/testphp/vieworders.php" />
     </list>
     <ignored path="forhtml.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,22 +29,22 @@
       <file leaf-file-name="orderform.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testphp/orderform.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.375">
+            <state vertical-scroll-proportion="0.0">
               <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="vieworders.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="vieworders.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testphp/vieworders.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.5">
-              <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+            <state vertical-scroll-proportion="0.9011407">
+              <caret line="57" column="34" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="37" />
               <folding>
-                <marker date="1449138310272" expanded="true" signature="800:974" placeholder="..." />
-                <marker date="1449138310272" expanded="true" signature="829:974" placeholder="..." />
-                <marker date="1449138310272" expanded="true" signature="1271:1518" placeholder="..." />
+                <marker date="1449627325543" expanded="true" signature="823:997" placeholder="..." />
+                <marker date="1449627325543" expanded="true" signature="852:997" placeholder="..." />
+                <marker date="1449627325543" expanded="true" signature="1294:1541" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -52,7 +53,7 @@
       <file leaf-file-name="processorder.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testphp/processorder.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="38.75">
+            <state vertical-scroll-proportion="0.0">
               <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
               <folding>
                 <marker date="1449125599792" expanded="true" signature="2375:2468" placeholder="..." />
@@ -61,26 +62,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reusable.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/phpstudy/reusable.php">
+      <file leaf-file-name="orders.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/orders/orders.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.125">
-              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-              <folding>
-                <element signature="e#6#85#0#PHP" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="reusable.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/phpstudy/reusable.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/phpstudy/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7714286">
+            <state vertical-scroll-proportion="0.0">
               <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
-              <folding>
-                <element signature="e#6#85#0#PHP" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -88,11 +95,9 @@
       <file leaf-file-name="processfeedback.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php_format/processfeedback.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.25">
+            <state vertical-scroll-proportion="0.0">
               <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
-              <folding>
-                <element signature="e#6#85#0#PHP" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -131,8 +136,8 @@
         <option value="$PROJECT_DIR$/php_format/processfeedback.php" />
         <option value="$PROJECT_DIR$/php_format/feedback.html" />
         <option value="$PROJECT_DIR$/phpstudy/reusable.php" />
-        <option value="$PROJECT_DIR$/testphp/vieworders.php" />
         <option value="$PROJECT_DIR$/phpstudy/main.php" />
+        <option value="$PROJECT_DIR$/testphp/vieworders.php" />
       </list>
     </option>
   </component>
@@ -146,8 +151,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 5.5" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="346" />
-    <option name="y" value="111" />
+    <option name="x" value="347" />
+    <option name="y" value="139" />
     <option name="width" value="1400" />
     <option name="height" value="937" />
   </component>
@@ -176,7 +181,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -267,17 +271,21 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="last_opened_file_path" value="/var/www/html/www" />
   </component>
   <component name="RunManager" selected="JavaScript Debug.vieworders.php">
+    <configuration default="false" name="processorder.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/testphp/processorder.php">
+      <method />
+    </configuration>
     <configuration default="false" name="testjs.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/forhtml/20151130/testjs.html">
       <method />
     </configuration>
@@ -287,21 +295,10 @@
     <configuration default="false" name="jsObject.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/forhtml/20151130/jsObject.html">
       <method />
     </configuration>
-    <configuration default="false" name="processorder.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/testphp/processorder.php">
-      <method />
-    </configuration>
     <configuration default="false" name="vieworders.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/forhtml/testphp/vieworders.php">
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
-    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
-      <BehatRunner />
       <method />
     </configuration>
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
@@ -322,19 +319,18 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.testjs.html" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.jsObject.html (1)" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.jsObject.html" />
-      <item index="3" class="java.lang.String" itemvalue="PHP Script.processorder.php" />
+      <item index="0" class="java.lang.String" itemvalue="PHP Script.processorder.php" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.testjs.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.jsObject.html (1)" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.jsObject.html" />
       <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.vieworders.php" />
     </list>
     <recent_temporary>
-      <list size="5">
+      <list size="4">
         <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.vieworders.php" />
-        <item index="1" class="java.lang.String" itemvalue="PHP Script.processorder.php" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.testjs.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.jsObject.html (1)" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.jsObject.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.testjs.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.jsObject.html (1)" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.jsObject.html" />
       </list>
     </recent_temporary>
   </component>
@@ -352,13 +348,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="346" y="111" width="1400" height="937" extended-state="0" />
-    <editor active="true" />
+    <frame x="347" y="139" width="1400" height="937" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25785714" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25714287" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32908458" sideWeight="0.50285715" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32792583" sideWeight="0.50285715" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -366,6 +361,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908458" sideWeight="0.49714285" order="2" side_tool="false" content_ui="tabs" />
@@ -391,6 +387,18 @@
       <option name="time" value="9" />
     </breakpoint-manager>
     <watches-manager />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="forhtml" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="forhtml" />
+        <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+      </PATH_ELEMENT>
+    </PATH>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/20151130/testjs.html">
@@ -689,7 +697,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/testphp/orderform.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.375">
+        <state vertical-scroll-proportion="0.0">
           <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
           <folding />
         </state>
@@ -699,45 +707,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14285715">
           <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/orders/orders.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.027322404">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testphp/processorder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="38.75">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-          <folding>
-            <marker date="1449125599792" expanded="true" signature="2375:2468" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php_format/processfeedback.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.25">
+        <state vertical-scroll-proportion="0.0">
           <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
-          <folding>
-            <element signature="e#6#85#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/phpstudy/reusable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.125">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#85#0#PHP" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -745,31 +722,69 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.40571427">
           <caret line="722" column="3" selection-start-line="722" selection-start-column="3" selection-end-line="722" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testphp/vieworders.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.5">
-          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-          <folding>
-            <marker date="1449138310272" expanded="true" signature="800:974" placeholder="..." />
-            <marker date="1449138310272" expanded="true" signature="829:974" placeholder="..." />
-            <marker date="1449138310272" expanded="true" signature="1271:1518" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/phpstudy/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7714286">
+        <state vertical-scroll-proportion="0.0">
           <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orders/orders.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpstudy/reusable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testphp/processorder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
           <folding>
-            <element signature="e#6#85#0#PHP" expanded="true" />
+            <marker date="1449125599792" expanded="true" signature="2375:2468" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/testphp/vieworders.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9011407">
+          <caret line="57" column="34" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="37" />
+          <folding>
+            <marker date="1449627325543" expanded="true" signature="823:997" placeholder="..." />
+            <marker date="1449627325543" expanded="true" signature="852:997" placeholder="..." />
+            <marker date="1449627325543" expanded="true" signature="1294:1541" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
