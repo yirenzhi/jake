@@ -3,6 +3,7 @@
 print('I\'m\"OK\"')
 print("I\'m\"OK\"")
 print r'\\\\\\\\'#当\为单数时有问题！！
+
 print '''line1
 line2
 line3'''

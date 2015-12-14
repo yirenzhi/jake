@@ -75,6 +75,9 @@ define('ROOT',"$DOCUMENT_ROOT/orders/orders.txt");
     echo "</table>";
 
 ?>
-
+<?php
+$str = "111";
+echo md5($str);
+?>
 </body>
 </html>
