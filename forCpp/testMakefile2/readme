@@ -1,0 +1,66 @@
+http://blog.csdn.net/kesaihao862/article/details/7332528
+
+!!!Makefile 中规则前需要有一个table的距离!!!
+
+当然由于这个程序是很短的我们可以这样来编译
+
+gcc -c main.c
+
+gcc -c mytool1.c
+
+gcc -c mytool2.c
+
+gcc -o main main.o mytool1.o mytool2.o
+
+-c是汇编阶段，生成.o的二进制目标代码。
+-o是链接阶段，把汇编生成的二进制代码，程序中的库文件链接起来
+
+第一版Makefile:
+main：main.o mytool1.o mytool2.o
+
+gcc -o main main.o mytool1.o mytool2.o
+
+main.o：main.c mytool1.h mytool2.h
+
+gcc -c main.c
+
+mytool1.o：mytool1.c mytool1.h
+
+gcc -c mytool1.c
+
+mytool2.o：mytool2.c mytool2.h
+
+gcc -c mytool2.c
+
+Makefile 有三个非常有用的变量。分别是$@,$^,$<代表的意义分别是：
+$@--目标文件，$^--所有的以来文件，$<--第一个依赖文件。
+
+第二版Makefile:
+main：main.o mytool1.o mytool2.o
+
+gcc -o $@ $^
+
+main.o：main.c mytool1.h mytool2.h
+
+gcc -c $<
+
+mytool1.o：mytool1.c mytool1.h
+
+gcc -c $<
+
+mytool2.o：mytool2.c mytool2.h
+
+gcc -c $<
+
+---------------
+这个规则表示所有的 .o文件都是依赖与相应的.c文件的。
+.c.o：
+gcc -c $<
+
+终极版Makefile:
+main：main.o mytool1.o mytool2.o
+gcc -o $@ $^
+
+.c.o：
+gcc -c $<
+

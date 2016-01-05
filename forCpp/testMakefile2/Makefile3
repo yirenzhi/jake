@@ -1,0 +1,9 @@
+main : main.o mytool1.o mytool2.o
+	gcc -o $@ $^
+
+.c.o:
+	gcc -c $<
+
+.PHONY:clean
+clean:
+	-rm main main.o mytool1.o mytool2.o 
