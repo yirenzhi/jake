@@ -1,0 +1,131 @@
+.在Shell中尝试Selector选择器
+为了介绍Selector的使用方法，接下来我们将要使用内置的 Scrapy shell 。Scrapy Shell需要您预装好IPython(一个扩展的Python终端)。
+
+您需要进入项目的根目录，执行下列命令来启动shell:
+
+scrapy shell "http://www.dmoz.org/Computers/Programming/Languages/Python/Books/"
+
+我们可以通过这段代码选择该页面中网站列表里所有 <li> 元素:
+
+sel.xpath('//ul/li')
+
+for line in open("test.txt"):   #use file iterators
+    print line
+
+	这是最简单也是运行速度最快的写法，他并没显式的读取文件，而是利用迭代器每次读取下一行。
+
+保存爬取到的数据
+最简单存储爬取的数据的方式是使用 Feed exports:
+
+scrapy crawl dmoz -o items.json
+
+
+
+
+!!!命令行工具
+默认Scrapy项目结构
+scrapy.cfg
+myproject/
+    __init__.py
+	items.py		
+	pipelines.py
+	settings.py
+	spiders/
+		__init__.py
+		spider1.py
+		spider2.py
+		...
+
+scrapy.cfg 存放的目录被认为是 项目的根目录 。该文件中包含python模块名的字段定义了项目的设置。
+
+
+使用Scrapy工具
+您可以以无参数的方式启动Scrapy工具。该命令将会给出一些使用帮助以及可用的命令:
+
+创建项目
+一般来说，使用 scrapy 工具的第一件事就是创建您的Scrapy项目:
+
+scrapy startproject myproject
+
+startproject
+语法: scrapy startproject <project_name>
+是否需要项目: no
+在 project_name 文件夹下创建一个名为 project_name 的Scrapy项目。
+
+例子:
+
+$ scrapy startproject myproject
+
+genspider
+语法: scrapy genspider [-t template] <name> <domain>
+是否需要项目: yes
+在当前项目中创建spider。
+
+这仅仅是创建spider的一种快捷方法。该方法可以使用提前定义好的模板来生成spider。您也可以自己创建spider的源码文件。
+
+例子:
+$ scrapy genspider -t basic example example.com
+Created spider 'example' using template 'basic' in module:
+mybot.spiders.example
+
+crawl
+语法: scrapy crawl <spider>
+是否需要项目: yes
+使用spider进行爬取。
+
+例子:
+
+$ scrapy crawl myspider
+[ ... myspider starts crawling ... ]
+
+view
+语法: scrapy view <url>
+是否需要项目: no
+在浏览器中打开给定的URL，并以Scrapy spider获取到的形式展现。 有些时候spider获取到的页面和普通用户看到的并不相同。 因此该命令可以用来检查spider所获取到的页面，并确认这是您所期望的。
+
+例子:
+
+$ scrapy view http://www.example.com/some/page.html
+[ ... browser starts ... ]
+
+
+fetch
+语法: scrapy fetch <url>
+是否需要项目: no
+使用Scrapy下载器(downloader)下载给定的URL，并将获取到的内容送到标准输出。
+
+该命令以spider下载页面的方式获取页面。例如，如果spider有 USER_AGENT 属性修改了 User Agent，该命令将会使用该属性。
+
+因此，您可以使用该命令来查看spider如何获取某个特定页面。
+
+该命令如果非项目中运行则会使用默认Scrapy downloader设定。
+
+例子:
+
+$ scrapy fetch --nolog http://www.example.com/some/page.html
+[ ... html content here ... ]
+
+可以在后面加一个>a.txt将内容保存到a.txt
+
+selector选择器
+http://scrapy-chs.readthedocs.org/zh_CN/latest/topics/selectors.html
+
+
+使用相对XPaths
+记住如果你使用嵌套的选择器，并使用起始为 / 的XPath，那么该XPath将对文档使用绝对路径，而且对于你调用的 Selector 不是相对路径。
+
+比如，假设你想提取在 <div> 元素中的所有 <p> 元素。首先，你将先得到所有的 <div> 元素:
+
+>>> divs = response.xpath('//div')
+开始时，你可能会尝试使用下面的错误的方法，因为它其实是从整篇文档中，而不仅仅是从那些 <div> 元素内部提取所有的 <p> 元素:
+
+>>> for p in divs.xpath('//p'):  # this is wrong - gets all <p> from the whole document
+...     print p.extract()
+下面是比较合适的处理方法(注意 .//p XPath的点前缀):
+
+>>> for p in divs.xpath('.//p'):  # extracts all <p> inside
+...     print p.extract()
+另一种常见的情况将是提取所有直系 <p> 的结果:
+
+>>> for p in divs.xpath('p'):
+...     print p.extract()

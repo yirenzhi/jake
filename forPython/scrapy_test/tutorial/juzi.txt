@@ -1,0 +1,755 @@
+<!doctype html>
+<html class="no-js juzi" lang="">
+    <head>
+        <meta charset="utf-8">
+        <title>公司列表页 | IT桔子</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="shortcut icon" href="http://itjuzi.com/assets/front/favicon.png">
+        <link rel="apple-touch-icon-precomposed" href="http://itjuzi.com/assets/front/favicon.png">
+
+                    <meta name="Keywords" content="互联网创业公司,移动互联网,电子商务,SNS社交网络,IT桔子" />
+        
+                    <meta name="Description" content="这里是IT桔子所收录的国内外创业公司数据库，覆盖最新最全的移动互联网、互联网、电子商务、SNS社会化媒体等公司。" />
+        
+        <!-- Uploadify -->
+        <link rel='stylesheet' type='text/css' href='https://itjuzi.com/assets/common/uploadify/uploadify.css'>
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="stylesheet" href="https://itjuzi.com/assets/front/styles/main.css">
+
+        <link rel="stylesheet" href="https://itjuzi.com/assets/front/styles/fontawesome.css">
+
+        <script src="https://itjuzi.com/assets/front/scripts/jquery.min.js"></script>
+        <script src="https://itjuzi.com/assets/front/scripts/vendor/modernizr.js"></script>
+
+    </head>
+    <body>
+        <script src="https://itjuzi.com/assets/front/scripts/vendor.js"></script>
+        <div class="none"><img src="https://itjuzi.com/assets/front/favicon.png"></div>
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="thewrap">
+            <header>
+                <div>
+                                            <div class="navbox">                
+                            <div class="boxed">
+                                <a class="logo fll" href="http://itjuzi.com/">
+                                    <h1 class="seeo">IT桔子</h1>
+                                </a>
+                                <ul class="mainnav">
+                                    <li class="tab on">
+                                        <a href="http://itjuzi.com/">首页</a>
+                                    </li>
+                                    <li class="tab hoversub withsub">
+                                        <a href="http://itjuzi.com/activity">活动</a>
+                                        <div class="subblock sub-activity">
+                                            <div class="boxed">
+                                                <ul class="list-subactivity">
+                                                                                                                                                                    <li>
+                                                            <a href="http://itjuzi.com/activity/96" target="_blank">
+                                                                <p class="title">2016年桔 · 裂变创新大会</p>
+                                                                <p>
+                                                                                                                                            <span class="">报名中</span>
+                                                                                                                                        <span class="t-small c-gray">2016年1月10日</span>
+                                                                </p>
+                                                            </a>
+                                                        </li>
+                                                                                                                                                                    <li>
+                                                            <a href="http://itjuzi.com/activity/95" target="_blank">
+                                                                <p class="title">猎桔·懒熊 体育创业专场项目路演</p>
+                                                                <p>
+                                                                                                                                            <span class="">已结束</span>
+                                                                                                                                        <span class="t-small c-gray">2016年1月7日</span>
+                                                                </p>
+                                                            </a>
+                                                        </li>
+                                                                                                                                                                    <li>
+                                                            <a href="http://itjuzi.com/activity/94" target="_blank">
+                                                                <p class="title">投资人教你如何在60秒把项目讲清楚</p>
+                                                                <p>
+                                                                                                                                            <span class="">报名中</span>
+                                                                                                                                        <span class="t-small c-gray">2016年1月19日</span>
+                                                                </p>
+                                                            </a>
+                                                        </li>
+                                                    
+                                                    <!-- more -->
+                                                    <li class="more">
+                                                        <a href="http://itjuzi.com/activity" target="_blank">
+                                                            <span class="more">查看全部活动 <i class="fa fa-angle-right"></i></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="tab hoversub withsub">
+                                        <a href="javascript:void(0)">发现</a>
+                                        <div class="subblock sub-prod">
+                                            <div class="boxed">
+                                                <ul class="list-subprod">
+                                                    <li>
+                                                        <a href="http://itjuzi.com/special/chollima" target="_blank"><span class="jzicon qlm-index"></span>千里马俱乐部</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="http://itjuzi.com/report" target="_blank"><span class="jzicon baogao-index"></span>桔子报告</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="http://blog.itjuzi.com/" target="_blank"><span class="jzicon blog-index"></span>IT桔子博客</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="tab hoversub withsub">
+                                        <a href="javascript:void(0)">服务</a>
+                                        <div class="subblock">
+                                            <div class="boxed">
+                                                <ul class="list-subprod">
+                                                    <li>
+                                                        <a href="http://itjuzi.com/special/dataservice" target="_blank"><span class="jzicon dataservice-index"></span>数据服务</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="http://itjuzi.com/special/lieju" target="_blank"><span class="jzicon lieju-index"></span>猎桔融资</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="http://www.juzilab.com" target="_blank"><span class="jzicon juzilab-index"></span>桔子空间</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="http://tobshe.com/" target="_blank"><span class="jzicon tuopushe-index"></span>拓扑社</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="usernav">
+                                    <div class="usersearch">
+                                        <form action="http://itjuzi.com/search">
+                                            <input type="text" name="key" spellcheck="false" autocomplete="off" placeholder="创业公司、投资机构等…">
+                                            <button class="jzbtn bg-c" type="submit"><i class="fa fa-search"></i></button>
+                                        </form>
+                                    </div>
+                                    <div class="useradd">
+                                        <a target="_blank" href="http://itjuzi.com/add/company"><span class="jzbtn c-lined"><i class="fa fa-plus"></i> 添加公司</span></a>
+                                    </div>
+                                    <!-- 未登录 -->
+                                                                            <div class="userlogin">
+                                            <a class="jzbtn" href="http://itjuzi.com/user/login?redirect=company">登录</a><a class="jzbtn" href="http://itjuzi.com/user/register?redirect=company">注册</a>
+                                        </div>
+                                                                     </div>
+                            </div>
+                        </div>
+                                        
+                                            <div class="subnavbox">
+                            <div class="boxed">                 
+                                <div class="cont">
+                                    <ul class="subnav nav-comp">
+                                        <li><a href="http://itjuzi.com/company"                                            class="on"
+                                        ><span>公司</span><i>25920</i></a></li>
+                                        <li><a href="http://itjuzi.com/person" ><span>创业者</span><i>18982</i></a></li>
+                                         <li><a href="http://itjuzi.com/investevents" ><span>投资数据</span><i>15145</i></a></li>
+                                        <li><a href="http://itjuzi.com/investfirm" ><span>投资机构</span><i>2297</i></a></li>
+                                        <li><a href="http://itjuzi.com/investor" ><span>投资人</span><i>1693</i></a></li>
+                                        <li><a href="http://itjuzi.com/product" ><span>产品库</span><i>7093</i></a></li>
+                                        <li><a href="http://itjuzi.com/album" ><span>专辑</span><i>251</i></a></li>
+                                        <li><a href="http://itjuzi.com/news" ><span>新闻</span><i>32584</i></a></li>
+                                        <li><a href="http://itjuzi.com/comment" ><span>评论</span><i>3906</i></a></li>
+                                        <li><a target="_blank" href="http://today.itjuzi.com"><span>TODAY</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                                    </div>
+            </header>
+     
+            <div class="boxed">
+	<div class="sidebar right">
+		<div class="sec">
+			<ul class="list-lite-sidebarbtn">
+				<li><a href="http://itjuzi.com/location"><i class="fa fa-map c-gray"></i> <span>查看全部地点</span></a></li>
+				<li><a href="http://itjuzi.com/tag"><i class="fa fa-tags c-gray"></i> <span>查看全部TAG</span></a></li>
+				<li><a href="http://itjuzi.com/scope"><i class="fa fa-map-signs c-gray"></i> <span>查看全部行业</span></a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="main">
+		<div class="sec">
+			<div class="titlebar for2btn">
+				<a href="http://itjuzi.com/company" class="on"><i class="fa fa-list"></i> 国内公司 <span class="num flr c-gray t-small">22156</span></a>
+				<a href="http://itjuzi.com/company/foreign"><i class="fa fa-list"></i> 国外公司 <span class="num flr c-gray t-small">3760</span></a>
+			</div>
+			<div>
+
+				<!-- block 筛选区 -->
+				<div class="block-filter">
+										
+					<div class="filter-wrap">
+												<ul class="filter">
+							<li>
+								<span>行业 ▾</span>
+								<div class="subblock filter-sub sub-scope">
+									<ul>
+										<li><a href="http://itjuzi.com/company">所有</a></li>
+																																	<li><a  href="http://itjuzi.com/company?scope=1">教育</a></li>
+																							<li><a  href="http://itjuzi.com/company?scope=12">金融</a></li>
+																							<li><a  href="http://itjuzi.com/company?scope=28">汽车交通</a></li>
+																							<li><a  href="http://itjuzi.com/company?scope=38">房产服务</a></li>
+																							<li><a  href="http://itjuzi.com/company?scope=47">医疗健康</a></li>
+																							<li><a  href="http://itjuzi.com/company?scope=57">旅游</a></li>
+																							<li><a  href="http://itjuzi.com/company?scope=70">本地生活</a></li>
+																							<li><a  href="http://itjuzi.com/company?scope=80">游戏</a></li>
+																							<li><a  href="http://itjuzi.com/company?scope=95">广告营销</a></li>
+																							<li><a  href="http://itjuzi.com/company?scope=103">硬件</a></li>
+																							<li><a  href="http://itjuzi.com/company?scope=115">文化娱乐体育</a></li>
+																							<li><a  href="http://itjuzi.com/company?scope=126">企业服务</a></li>
+																							<li><a  href="http://itjuzi.com/company?scope=135">SNS社交网络</a></li>
+																							<li><a  href="http://itjuzi.com/company?scope=145">电子商务</a></li>
+																							<li><a  href="http://itjuzi.com/company?scope=161">工具软件</a></li>
+																							<li><a  href="http://itjuzi.com/company?scope=168">移动互联网</a></li>
+																														</ul>
+								</div>
+							</li>
+							
+							
+							<li>
+								<span>阶段 ▾</span>
+								<div class="subblock filter-sub">
+									<ul>
+										<li><a href="http://itjuzi.com/company">所有</a></li>
+																																	<li><a href="http://itjuzi.com/company?stage=1">初创期</a></li>
+																							<li><a href="http://itjuzi.com/company?stage=2">成长发展期</a></li>
+																							<li><a href="http://itjuzi.com/company?stage=3">上市公司</a></li>
+																							<li><a href="http://itjuzi.com/company?stage=4">成熟期</a></li>
+																														</ul>
+								</div>
+							</li>
+							<li>
+								<span>运营状态 ▾</span>
+								<div class="subblock filter-sub">
+									<ul>
+										<li><a href="http://itjuzi.com/company">所有</a></li>
+																																	<li><a href="http://itjuzi.com/company?status=1">运营中</a></li>
+																							<li><a href="http://itjuzi.com/company?status=2">未上线</a></li>
+																							<li><a href="http://itjuzi.com/company?status=3">已关闭</a></li>
+																							<li><a href="http://itjuzi.com/company?status=4">已转型</a></li>
+																														</ul>
+								</div>
+							</li>
+							<li>
+								<span>所在轮次 ▾</span>
+								<div class="subblock filter-sub">
+									<ul>
+										<li><a href="http://itjuzi.com/company">所有</a></li>
+																																	<li><a href="http://itjuzi.com/company?fund_status=15">尚未获投</a></li>
+																							<li><a href="http://itjuzi.com/company?fund_status=4">种子天使轮</a></li>
+																							<li><a href="http://itjuzi.com/company?fund_status=14">Pre-A轮</a></li>
+																							<li><a href="http://itjuzi.com/company?fund_status=5">A轮</a></li>
+																							<li><a href="http://itjuzi.com/company?fund_status=6">B轮</a></li>
+																							<li><a href="http://itjuzi.com/company?fund_status=7">C轮</a></li>
+																							<li><a href="http://itjuzi.com/company?fund_status=8">D轮</a></li>
+																							<li><a href="http://itjuzi.com/company?fund_status=9">E轮</a></li>
+																							<li><a href="http://itjuzi.com/company?fund_status=13">F轮-Pre-IPO</a></li>
+																							<li><a href="http://itjuzi.com/company?fund_status=11">已被收购</a></li>
+																							<li><a href="http://itjuzi.com/company?fund_status=10">已上市</a></li>
+																							<li><a href="http://itjuzi.com/company?fund_status=1">不明确</a></li>
+																														</ul>
+								</div>
+							</li>
+							<li>
+								<span>融资需求 ▾</span>
+								<div class="subblock filter-sub">
+									<ul>
+										<li><a href="http://itjuzi.com/company">所有</a></li>
+																																	<li><a href="http://itjuzi.com/company?fund_needs=1">需要融资</a></li>
+																							<li><a href="http://itjuzi.com/company?fund_needs=2">不需要融资</a></li>
+																							<li><a href="http://itjuzi.com/company?fund_needs=3">寻求被收购</a></li>
+																							<li><a href="http://itjuzi.com/company?fund_needs=4">不明确</a></li>
+																														</ul>
+								</div>
+							</li>
+							<li>
+								<span>地区 ▾</span>
+								<div class="subblock filter-sub sub-cubes">
+									<ul>
+										<li><a href="http://itjuzi.com/company">所有</a></li>
+																																	<li><a href="http://itjuzi.com/company?prov=%E4%B8%8A%E6%B5%B7">上海</a></li>
+																							<li><a href="http://itjuzi.com/company?prov=%E4%BA%91%E5%8D%97">云南</a></li>
+																							<li><a href="http://itjuzi.com/company?prov=%E5%86%85%E8%92%99%E5%8F%A4">内蒙古</a></li>
+																							<li><a href="http://itjuzi.com/company?prov=%E5%8C%97%E4%BA%AC">北京</a></li>
+																							<li><a href="http://itjuzi.com/company?prov=%E5%8F%B0%E6%B9%BE">台湾</a></li>
+																							<li><a href="http://itjuzi.com/company?prov=%E5%90%89%E6%9E%97">吉林</a></li>
+																							<li><a href="http://itjuzi.com/company?prov=%E5%9B%9B%E5%B7%9D">四川</a></li>
+																							<li><a href="http://itjuzi.com/company?prov=%E5%9B%BD%E5%A4%96">国外</a></li>
+																							<li><a href="http://itjuzi.com/company?prov=%E5%A4%A9%E6%B4%A5">天津</a></li>
+																							<li><a href="http://itjuzi.com/company?prov=%E5%AE%81%E5%A4%8F">宁夏</a></li>
+																							<li><a href="http://itjuzi.com/company?prov=%E5%AE%89%E5%BE%BD">安徽</a></li>
+																							<li><a href="http://itjuzi.com/company?prov=%E5%B1%B1%E4%B8%9C">山东</a></li>
+																							<li><a href="http://itjuzi.com/company?prov=%E5%B1%B1%E8%A5%BF">山西</a></li>
+																							<li><a href="http://itjuzi.com/company?prov=%E5%B9%BF%E4%B8%9C">广东</a></li>
+																							<li><a href="http://itjuzi.com/company?prov=%E5%B9%BF%E8%A5%BF">广西</a></li>
+																							<li><a href="http://itjuzi.com/company?prov=%E6%96%B0%E7%96%86">新疆</a></li>
+																							<li><a href="http://itjuzi.com/company?prov=%E6%B1%9F%E8%8B%8F">江苏</a></li>
+																							<li><a href="http://itjuzi.com/company?prov=%E6%B1%9F%E8%A5%BF">江西</a></li>
+																							<li><a href="http://itjuzi.com/company?prov=%E6%B2%B3%E5%8C%97">河北</a></li>
+																							<li><a href="http://itjuzi.com/company?prov=%E6%B2%B3%E5%8D%97">河南</a></li>
+																							<li><a href="http://itjuzi.com/company?prov=%E6%B5%99%E6%B1%9F">浙江</a></li>
+																							<li><a href="http://itjuzi.com/company?prov=%E6%B5%B7%E5%8D%97">海南</a></li>
+																							<li><a href="http://itjuzi.com/company?prov=%E6%B9%96%E5%8C%97">湖北</a></li>
+																							<li><a href="http://itjuzi.com/company?prov=%E6%B9%96%E5%8D%97">湖南</a></li>
+																							<li><a href="http://itjuzi.com/company?prov=%E6%BE%B3%E9%97%A8">澳门</a></li>
+																							<li><a href="http://itjuzi.com/company?prov=%E7%94%98%E8%82%83">甘肃</a></li>
+																							<li><a href="http://itjuzi.com/company?prov=%E7%A6%8F%E5%BB%BA">福建</a></li>
+																							<li><a href="http://itjuzi.com/company?prov=%E8%A5%BF%E8%97%8F">西藏</a></li>
+																							<li><a href="http://itjuzi.com/company?prov=%E8%B4%B5%E5%B7%9E">贵州</a></li>
+																							<li><a href="http://itjuzi.com/company?prov=%E8%BE%BD%E5%AE%81">辽宁</a></li>
+																							<li><a href="http://itjuzi.com/company?prov=%E9%87%8D%E5%BA%86">重庆</a></li>
+																							<li><a href="http://itjuzi.com/company?prov=%E9%99%95%E8%A5%BF">陕西</a></li>
+																							<li><a href="http://itjuzi.com/company?prov=%E9%9D%92%E6%B5%B7">青海</a></li>
+																							<li><a href="http://itjuzi.com/company?prov=%E9%A6%99%E6%B8%AF">香港</a></li>
+																							<li><a href="http://itjuzi.com/company?prov=%E9%BB%91%E9%BE%99%E6%B1%9F">黑龙江</a></li>
+																														</ul>
+								</div>
+							</li>
+							<li>
+								<span>成立时间 ▾</span>
+								<div class="subblock filter-sub sub-cubes">
+									<ul>
+										<li><a href="http://itjuzi.com/company">所有</a></li>
+																																	<li><a href="http://itjuzi.com/company?born_year=2016">2016年</a></li>
+																							<li><a href="http://itjuzi.com/company?born_year=2015">2015年</a></li>
+																							<li><a href="http://itjuzi.com/company?born_year=2014">2014年</a></li>
+																							<li><a href="http://itjuzi.com/company?born_year=2013">2013年</a></li>
+																							<li><a href="http://itjuzi.com/company?born_year=2012">2012年</a></li>
+																							<li><a href="http://itjuzi.com/company?born_year=2011">2011年</a></li>
+																							<li><a href="http://itjuzi.com/company?born_year=2010">2010年</a></li>
+																							<li><a href="http://itjuzi.com/company?born_year=2009">2009年</a></li>
+																							<li><a href="http://itjuzi.com/company?born_year=2008">2008年</a></li>
+																							<li><a href="http://itjuzi.com/company?born_year=2007">2007年</a></li>
+																							<li><a href="http://itjuzi.com/company?born_year=2006">2006年</a></li>
+																							<li><a href="http://itjuzi.com/company?born_year=2005">2005年</a></li>
+																							<li><a href="http://itjuzi.com/company?born_year=2004">2004年</a></li>
+																							<li><a href="http://itjuzi.com/company?born_year=2003">2003年</a></li>
+																							<li><a href="http://itjuzi.com/company?born_year=2002">2002年</a></li>
+																							<li><a href="http://itjuzi.com/company?born_year=2001">2001年</a></li>
+																							<li><a href="http://itjuzi.com/company?born_year=2000">2000年</a></li>
+																														</ul>
+								</div>
+							</li>
+							<li>
+								<span>排序 ▾</span>
+								<div class="subblock filter-sub">
+									<ul>
+										<li><a href="http://itjuzi.com/company?sortby=inputtime">按收录时间</a></li>
+										<li><a href="http://itjuzi.com/company?sortby=foundtime">按成立时间</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sec">
+			<div>
+				<!-- block 搜索列表区 -->
+				<div>
+					<ul class="list-main-icnset thead">
+						<li>
+							<i class="cell pic">
+								
+							</i>
+							<i class="cell maincell">
+								<span class="t-small">公司</span>
+							</i>
+							<i class="cell date">
+								成立时间
+							</i>
+							<i class="cell round">
+								轮次
+							</i>
+							<i class="cell action">
+								关注
+							</i>
+						</li>
+					</ul>
+					<ul class="list-main-icnset">
+													<li>
+								<i class="cell pic">
+									<a target="_blank" href="http://itjuzi.com/company/31576">
+																					<span class="incicon"><img src="http://itjuzi.com/images/0f115473bf8dd77d38a6aae5e46cd2aa.png"></span>
+																			</a>
+								</i>
+								<i class="cell maincell">
+									<p class="title"><a target="_blank" href="http://itjuzi.com/company/31576"><span>杰睿教育</span></a></p>
+									<p class="des"><span>杰睿教育成立于2004年，是以教辅研发、师资培训、企业培训、公益等业务为一体的集团化公司。</span></p>
+									<p>
+										<span class="tags t-small c-gray-aset">
+																																				<a href="http://itjuzi.com/company?scope=1">教育</a>
+																																	</span>
+										<span class="loca c-gray-aset">
+											<a href="http://itjuzi.com/company?prov=北京">北京</a>
+										</span>
+									</p>
+								</i>
+								<i class="cell date">
+									2004.11								</i>
+								<i class="cell round">
+																			<a href="http://itjuzi.com/company?fund_status=5"><span class="tag gray">A轮</span></a>
+																	</i>
+								<i class="cell action">
+																			<a href="http://itjuzi.com/user/login?redirect=company" class="fa fa-star-o"></a>
+																	</i>								
+							</li>
+													<li>
+								<i class="cell pic">
+									<a target="_blank" href="http://itjuzi.com/company/31573">
+																					<span class="incicon"><img src="http://itjuzi.com/images/23e08a3f2ed265b93b52e0504644ea7e.png"></span>
+																			</a>
+								</i>
+								<i class="cell maincell">
+									<p class="title"><a target="_blank" href="http://itjuzi.com/company/31573"><span>Gloteam</span></a></p>
+									<p class="des"><span>Gloteam是一款通过移动互联(Mobile)、云计算(Cloud)技术面向企业提供服务和生产力移动客户端</span></p>
+									<p>
+										<span class="tags t-small c-gray-aset">
+																																				<a href="http://itjuzi.com/company?scope=126">企业服务</a>
+																																	</span>
+										<span class="loca c-gray-aset">
+											<a href="http://itjuzi.com/company?prov=北京">北京</a>
+										</span>
+									</p>
+								</i>
+								<i class="cell date">
+									2015.8								</i>
+								<i class="cell round">
+																			<a href="http://itjuzi.com/company?fund_status=15"><span class="tag gray">尚未获投</span></a>
+																	</i>
+								<i class="cell action">
+																			<a href="http://itjuzi.com/user/login?redirect=company" class="fa fa-star-o"></a>
+																	</i>								
+							</li>
+													<li>
+								<i class="cell pic">
+									<a target="_blank" href="http://itjuzi.com/company/31571">
+																					<span class="incicon"><img src="http://itjuzi.com/images/f226380fe06c7d0c573f1a3e1c4af5c1.png"></span>
+																			</a>
+								</i>
+								<i class="cell maincell">
+									<p class="title"><a target="_blank" href="http://itjuzi.com/company/31571"><span>噼啪停车</span></a></p>
+									<p class="des"><span>噼啪停车以停车服务为核心，完善停车体验，旨在把噼啪停车打造成一个互联通用的平台</span></p>
+									<p>
+										<span class="tags t-small c-gray-aset">
+																																				<a href="http://itjuzi.com/company?scope=28">汽车交通</a>
+																																	</span>
+										<span class="loca c-gray-aset">
+											<a href="http://itjuzi.com/company?prov=广东">广东</a>
+										</span>
+									</p>
+								</i>
+								<i class="cell date">
+									2015.9								</i>
+								<i class="cell round">
+																			<a href="http://itjuzi.com/company?fund_status=15"><span class="tag gray">尚未获投</span></a>
+																	</i>
+								<i class="cell action">
+																			<a href="http://itjuzi.com/user/login?redirect=company" class="fa fa-star-o"></a>
+																	</i>								
+							</li>
+													<li>
+								<i class="cell pic">
+									<a target="_blank" href="http://itjuzi.com/company/31570">
+																					<span class="incicon"><img src="http://itjuzi.com/images/5062c67b2bdd832f44ecce5ca11be26c.png"></span>
+																			</a>
+								</i>
+								<i class="cell maincell">
+									<p class="title"><a target="_blank" href="http://itjuzi.com/company/31570"><span>智握科技</span></a></p>
+									<p class="des"><span>智握科技是一个母婴企业O2O运营技术提供商，帮助母婴品牌商和渠道商利用微信等移动互联网渠道更轻松、更精准地针对消费者展开O2O营销。</span></p>
+									<p>
+										<span class="tags t-small c-gray-aset">
+																																				<a href="http://itjuzi.com/company?scope=126">企业服务</a>
+																																	</span>
+										<span class="loca c-gray-aset">
+											<a href="http://itjuzi.com/company?prov=上海">上海</a>
+										</span>
+									</p>
+								</i>
+								<i class="cell date">
+									2014.6								</i>
+								<i class="cell round">
+																			<a href="http://itjuzi.com/company?fund_status=5"><span class="tag gray">A轮</span></a>
+																	</i>
+								<i class="cell action">
+																			<a href="http://itjuzi.com/user/login?redirect=company" class="fa fa-star-o"></a>
+																	</i>								
+							</li>
+													<li>
+								<i class="cell pic">
+									<a target="_blank" href="http://itjuzi.com/company/31569">
+																					<span class="incicon"><img src="http://itjuzi.com/images/2393e69a3b5a81cca145a89bf58c3155.png"></span>
+																			</a>
+								</i>
+								<i class="cell maincell">
+									<p class="title"><a target="_blank" href="http://itjuzi.com/company/31569"><span>邀约网</span></a></p>
+									<p class="des"><span>邀约网是一个为商务人士提供陌生邀约的企业平台，方便各个行业的商务人士都需要开拓陌生市场</span></p>
+									<p>
+										<span class="tags t-small c-gray-aset">
+																																				<a href="http://itjuzi.com/company?scope=135">SNS社交网络</a>
+																																	</span>
+										<span class="loca c-gray-aset">
+											<a href="http://itjuzi.com/company?prov=广东">广东</a>
+										</span>
+									</p>
+								</i>
+								<i class="cell date">
+									2014.11								</i>
+								<i class="cell round">
+																			<a href="http://itjuzi.com/company?fund_status=1"><span class="tag gray">不明确</span></a>
+																	</i>
+								<i class="cell action">
+																			<a href="http://itjuzi.com/user/login?redirect=company" class="fa fa-star-o"></a>
+																	</i>								
+							</li>
+													<li>
+								<i class="cell pic">
+									<a target="_blank" href="http://itjuzi.com/company/31568">
+																					<span class="incicon"><img src="http://itjuzi.com/images/d25819afd07b96db384f6e42f7d0ecec.png"></span>
+																			</a>
+								</i>
+								<i class="cell maincell">
+									<p class="title"><a target="_blank" href="http://itjuzi.com/company/31568"><span>MakeMyTrip</span></a></p>
+									<p class="des"><span>MakeMyTrip成立于2000年，由一家以海外印度侨民为主要客户的旅游网站发展起来。</span></p>
+									<p>
+										<span class="tags t-small c-gray-aset">
+																																				<a href="http://itjuzi.com/company?scope=57">旅游</a>
+																																	</span>
+										<span class="loca c-gray-aset">
+											<a href="http://itjuzi.com/company?prov=国外">国外</a>
+										</span>
+									</p>
+								</i>
+								<i class="cell date">
+									2000.1								</i>
+								<i class="cell round">
+																			<a href="http://itjuzi.com/company?fund_status=10"><span class="tag gray">已上市</span></a>
+																	</i>
+								<i class="cell action">
+																			<a href="http://itjuzi.com/user/login?redirect=company" class="fa fa-star-o"></a>
+																	</i>								
+							</li>
+													<li>
+								<i class="cell pic">
+									<a target="_blank" href="http://itjuzi.com/company/31565">
+																					<span class="incicon"><img src="http://itjuzi.com/images/a8360b8c81c32950f74b982ecef36816.png"></span>
+																			</a>
+								</i>
+								<i class="cell maincell">
+									<p class="title"><a target="_blank" href="http://itjuzi.com/company/31565"><span>玖融网</span></a></p>
+									<p class="des"><span>玖融网（jiurong.com），玖融网是一家为借款人与投资人双方提供借贷信息交互、撮合双方完成资金匹配的中介信息服务平台。致力于为有资金需求和投资需求的个人或企业提供一个公平、透明、稳定、高效的网络信贷服务平台，真诚地为广大客户提供贷款咨询、投资服务 等垂直一体化的专业服务供应。</span></p>
+									<p>
+										<span class="tags t-small c-gray-aset">
+																																				<a href="http://itjuzi.com/company?scope=12">金融</a>
+																																	</span>
+										<span class="loca c-gray-aset">
+											<a href="http://itjuzi.com/company?prov=湖北">湖北</a>
+										</span>
+									</p>
+								</i>
+								<i class="cell date">
+									2014.7								</i>
+								<i class="cell round">
+																			<a href="http://itjuzi.com/company?fund_status=5"><span class="tag gray">A轮</span></a>
+																	</i>
+								<i class="cell action">
+																			<a href="http://itjuzi.com/user/login?redirect=company" class="fa fa-star-o"></a>
+																	</i>								
+							</li>
+													<li>
+								<i class="cell pic">
+									<a target="_blank" href="http://itjuzi.com/company/31564">
+																					<span class="incicon"><img src="http://itjuzi.com/images/d0fe66bc833fa39deac4cf6b01a4d821.png"></span>
+																			</a>
+								</i>
+								<i class="cell maincell">
+									<p class="title"><a target="_blank" href="http://itjuzi.com/company/31564"><span>高朋</span></a></p>
+									<p class="des"><span>高朋是一家团购网站，提供吃喝玩乐的超值的消费优惠。</span></p>
+									<p>
+										<span class="tags t-small c-gray-aset">
+																																				<a href="http://itjuzi.com/company?scope=145">电子商务</a>
+																																	</span>
+										<span class="loca c-gray-aset">
+											<a href="http://itjuzi.com/company?prov=北京">北京</a>
+										</span>
+									</p>
+								</i>
+								<i class="cell date">
+									2007.1								</i>
+								<i class="cell round">
+																			<a href="http://itjuzi.com/company?fund_status=8"><span class="tag gray">D轮</span></a>
+																	</i>
+								<i class="cell action">
+																			<a href="http://itjuzi.com/user/login?redirect=company" class="fa fa-star-o"></a>
+																	</i>								
+							</li>
+													<li>
+								<i class="cell pic">
+									<a target="_blank" href="http://itjuzi.com/company/31562">
+																					<span class="incicon"><img src="http://itjuzi.com/images/57a557adee4d97c7386074b3158315e5.jpg"></span>
+																			</a>
+								</i>
+								<i class="cell maincell">
+									<p class="title"><a target="_blank" href="http://itjuzi.com/company/31562"><span>卡咪网络</span></a></p>
+									<p class="des"><span>卡咪网络是一个以手机移动终端APP为载体，融合高端品牌4S店、传统电商等商业形式高端品牌互联网服务商，宝利德控股集团旗下子公司</span></p>
+									<p>
+										<span class="tags t-small c-gray-aset">
+																																				<a href="http://itjuzi.com/company?scope=145">电子商务</a>
+																																	</span>
+										<span class="loca c-gray-aset">
+											<a href="http://itjuzi.com/company?prov=浙江">浙江</a>
+										</span>
+									</p>
+								</i>
+								<i class="cell date">
+									2015.4								</i>
+								<i class="cell round">
+																			<a href="http://itjuzi.com/company?fund_status=15"><span class="tag gray">尚未获投</span></a>
+																	</i>
+								<i class="cell action">
+																			<a href="http://itjuzi.com/user/login?redirect=company" class="fa fa-star-o"></a>
+																	</i>								
+							</li>
+													<li>
+								<i class="cell pic">
+									<a target="_blank" href="http://itjuzi.com/company/31561">
+																					<span class="incicon"><img src="http://itjuzi.com/images/d6e48dd9bcb201441aaa352b86cff148.jpg"></span>
+																			</a>
+								</i>
+								<i class="cell maincell">
+									<p class="title"><a target="_blank" href="http://itjuzi.com/company/31561"><span>鬼畜输入法</span></a></p>
+									<p class="des"><span>鬼畜输入法是一个好玩的娱乐应用，输入任何你想说的话，鬼畜输入法立刻将你的文字转变成由大牌出演的精彩视频小电影。北京视界核心网络（Blink）旗下新产品。</span></p>
+									<p>
+										<span class="tags t-small c-gray-aset">
+																																				<a href="http://itjuzi.com/company?scope=115">文化娱乐体育</a>
+																																	</span>
+										<span class="loca c-gray-aset">
+											<a href="http://itjuzi.com/company?prov=北京">北京</a>
+										</span>
+									</p>
+								</i>
+								<i class="cell date">
+									2016.1								</i>
+								<i class="cell round">
+																			<a href="http://itjuzi.com/company?fund_status=5"><span class="tag gray">A轮</span></a>
+																	</i>
+								<i class="cell action">
+																			<a href="http://itjuzi.com/user/login?redirect=company" class="fa fa-star-o"></a>
+																	</i>								
+							</li>
+											</ul>
+				</div>
+
+				<!-- block 分页区 -->
+				<div> <div class="ui-pagechange for-sec-bottom"><a href="" class="on">1</a><a href="http://itjuzi.com/company?page=2" data-ci-pagination-page="2">2</a><a href="http://itjuzi.com/company?page=3" data-ci-pagination-page="3">3</a><a href="http://itjuzi.com/company?page=4" data-ci-pagination-page="4">4</a><a href="http://itjuzi.com/company?page=5" data-ci-pagination-page="5">5</a><a href="http://itjuzi.com/company?page=6" data-ci-pagination-page="6">6</a><a href="http://itjuzi.com/company?page=2" data-ci-pagination-page="2">下一页 &rarr;</a><a href="http://itjuzi.com/company?page=2224" data-ci-pagination-page="2224">尾页 &raquo;</a></ul> </div> </div>			</div>
+		</div>
+	</div>
+</div>
+       
+            
+                            <footer>
+                    <div class="footer-info boxed"> 
+                        <div class="colum">
+                            <ul>
+                                <li><b>关于</b></li>
+                                <li><a target="_blank" href="http://itjuzi.com/aboutus">关于IT桔子</a></li>
+                                <li><a target="_blank" href="http://itjuzi.com/contact">联系我们</a></li>
+                                <li><a target="_blank" href="http://itjuzi.com/partners">合作伙伴</a></li>
+                                <li><a target="_blank" href="http://itjuzi.com/faq">FAQ</a></li>
+                            </ul>
+                        </div>
+                        <div class="colum">
+                            <ul>
+                                <li><b>发现</b></li>
+                                <li><a target="_blank" href="http://itjuzi.com/activity">活动</a></li>
+                                <li><a target="_blank" href="http://itjuzi.com/special/chollima">千里马俱乐部</a></li>
+                                <li><a target="_blank" href="http://today.itjuzi.com">TODAY</a></li>
+                                <li><a target="_blank" href="http://itjuzi.com/report">桔子报告</a></li>
+                            </ul>
+                        </div>
+                        <div class="colum">
+                            <ul>
+                                <li><b>服务</b></li>
+                                <li><a target="_blank" href="http://itjuzi.com/special/dataservice">数据服务</a></li>
+                                <li><a target="_blank" href="http://tobshe.com/">拓扑社</a></li>
+                                <li><a target="_blank" href="http://itjuzi.com/special/lieju">猎桔融资</a></li>
+                                <li><a target="_blank" href="http://www.juzilab.com">桔子空间</a></li>
+                            </ul>
+                        </div>
+                        <div class="colum">
+                            <form action="//itjuzi.us11.list-manage.com/subscribe/post?u=6b3e3c5490060d631ec016134&amp;id=b05ed8edcd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                <ul>
+                                    <li><b>IT桔子周报订阅</b></li>
+                                    <li>跟踪每周创投动态</li>
+                                    <li class="block-footer-getinfo">
+                                        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="name@email.com"/>
+                                        <button type="submit" class="jzbtn bg-c">订阅</button>
+                                    </li>
+                                    <li class="block-footer-iconlink">
+                                        <a href="http://weibo.com/itjuzi" target="_blank"><i class="fa fa-weibo"></i></a>
+                                        <a class="hoversub">
+                                            <i class="fa fa-weixin"></i>
+                                            <span class="subblock iconblock">
+                                                <img src="http://itjuzi.com/assets/front/images/photo/qrcode-juzi.png">
+                                            </span>
+                                        </a>
+                                        <a href="http://shang.qq.com/wpa/qunwpa?idkey=92942d527acf0d8f6f9cc438d51cce927aba1d7b1ee351def45ad4c9bd7cd086">
+                                            <i class="fa fa-qq"></i>
+                                        </a>
+                                        <a href="mailto:hello@itjuzi.com" target="_blank"><i class="fa fa-envelope-o"></i></a>
+                                    </li>
+                                </ul>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="footer-sign">
+                        <div class="boxed">
+                            IT桔子 - IT互联网公司产品数据库及商业信息服务
+                            <span class="flr copy"> © 2013-2015 itjuzi.com 京ICP备14026526号-2</span>
+                        </div>
+                    </div>
+                </footer>
+                    </div>
+
+        <script>
+            window.site_url = 'http://itjuzi.com/';
+        </script>
+        <script src="https://itjuzi.com/assets/front/scripts/bst.js"></script>
+        <script src="https://itjuzi.com/assets/front/scripts/main.js"></script>
+        <!-- Uploadify -->
+        <script src="http://itjuzi.com/assets/common/uploadify/jquery.uploadify.min.js"></script>
+
+        
+        <!-- GA -->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-59006131-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+        <div style="display:none">
+            <script type="text/javascript">
+                var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+                document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F1c587ad486cdb6b962e94fc2002edf89' type='text/javascript'%3E%3C/script%3E"));
+            </script>
+        </div>
+        <!-- GrowingIO -->
+        <script>
+            var _vds = _vds || [];(function(){ _vds.push(['setAccountId', 'eee5a46c52000d401f969f4535bdaa78']);(function() {var vds = document.createElement('script'); vds.type='text/javascript'; vds.async = true;vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(vds, s);})();})();
+        </script>
+    </body>
+</html>
+
