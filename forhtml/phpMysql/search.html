@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>书店记录查询</title>
+</head>
+<body>
+<h1>书籍记录查询</h1>
+
+<form action="results.php" method="post">
+    选择搜索类型：<br/>
+    <select name="searchtype" id="">
+        <option value="author">作者</option>
+        <option value="title">标题</option>
+        <option value="isbn">ISBN</option>
+    </select>
+    <br/>
+    输入搜索内容:<br/>
+    <input name="searchterm" type="text" size="40">
+    <br/>
+    <input type="submit" name="submit" value="搜索">
+</form>
+</body>
+</html>

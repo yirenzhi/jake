@@ -1,0 +1,137 @@
+PHP和MySQL Web Development第二篇 使用MySQL
+
+登录到MySQL
+mysql -h hostname -u username -p
+例子： mysql -u root -p    然后密码输入1
+
+创建数据库和用户
+create database dbname; 创建名为dbname的数据库
+
+例子：
+一个典型的数据库建表, 建用户过程:
+
+创建用于localhost连接的用户并指定密码
+mysql> create user 'pcom'@'localhost' identified by 'aaa7B2249';
+Query OK, 0 rows affected (0.00 sec)
+
+创建数据库
+mysql> create database pcom default character set utf8 collate utf8_bin;
+Query OK, 1 row affected (0.00 sec)
+
+给本地用户授权, 这里不需要指定密码
+mysql> grant all on pcom.* to 'pcom'@'localhost';
+Query OK, 0 rows affected (0.00 sec)
+
+给其他IP地址下的用户授权, 注意: 这里必须指定密码, 否则就可以无密码访问
+mysql> grant all on pcom.* to 'pcom'@'192.168.0.0/255.255.0.0' identified by 'aaa7B2249';
+Query OK, 0 rows affected (0.00 sec)
+
+同理
+mysql> grant all on pcom.* to 'pcom'@'172.20.0.0/255.255.0.0' identified by 'aaa7B2249';
+Query OK, 0 rows affected (0.00 sec)
+
+Done!
+
+查看MYSQL数据库中所有用户
+mysql> SELECT DISTINCT CONCAT('User: ''',user,'''@''',host,''';') AS query FROM mysql.user;
+
+
+数据库增删改查：
+增
+insert [into] table [(column1, column2, column3, ...)] values
+(value1, value2, value3, ...)
+例子:
+insert into customers values
+(3,'Jake','25 Oak Street','Airport West')
+
+删
+delete [low_priority] [quick] [ignore] from table
+[where condition]
+[order by order_cols]
+[limit number]
+例子:
+delete from table; 所有表中的行都将删除
+delete from customers where customerid=5;
+
+DROP TABLE table;删除整个表
+
+DROP DATABASE database; 删除整个数据库
+
+改
+update [low_priority] [ignore] tablename
+set column1=expression1, column2=expression2, ...
+[where condition]
+[order by order_criteria]
+[limit number]
+例子:
+update books
+set price= price*1.1
+
+
+查
+select [options] items
+[into file_details]
+from tables
+[where conditions]
+[group by group_type]
+[having where_definition]
+[order by order_type]
+[limit limit_criteria]
+[procedure proc_name(arguments)]
+[lock_options]
+
+
+
+从web查询数据库的基本步骤
+
+1.检查并过滤来自用户的数据。
+trim()用于删除两端空白
+$searchtype=$_POST['searchtype'];
+$searchterm=trim(['searchterm']);
+if($searchtype==""||$searchterm=="")
+{
+    echo '你没有输入正确的搜索信息';
+    exit;
+}
+//如果get_magic_qutes_gpc()开启就会自动给双引号加反斜杠,如果没开启就主动加.
+if(!get_magic_quotes_gpc()){
+    $searchtype = addslashes($searchtype);
+    $searchterm = addslashes($searchterm);
+}
+
+2.建立一个到适当数据库的连接。
+面向对象的方法
+@为错误抑制操作符
+@ $db = new mysqli('localhost','bookorama','bookorama123','books');
+
+if(mysqli_connect_errno())
+{
+    echo'没有连接上数据库，请重试.';
+    exit;
+}
+
+3.查询数据库。
+选择数据库可以用mysqli_select_db(db_resource, db_name)
+$query = "select * from books where ".$searchtype." like '%".$searchterm."%'";
+$result= $db->query($query);
+
+4.获取查询结果。
+$num_results = $result->num_rows;
+echo "<p>找到了".$num_results."本书</p>";
+for($i=0;$i<$num_results;$i++)
+{
+    $row = $result->fetch_assoc();
+    echo "<p><strong>".($i+1).".标题:";
+    echo htmlspecialchars(stripslashes($row['title']));
+    echo "</strong>";
+    echo "<br/>作者:";
+    echo htmlspecialchars(stripslashes($row['author']));
+    echo "<br/>编号:";
+    echo htmlspecialchars(stripslashes($row['isbn']));
+    echo "<br/>价格:";
+    echo htmlspecialchars(stripslashes($row['price']));
+    echo "</p>";
+
+}
+stripslashes()去除字符里的/
+5.将结果显示给用户。
