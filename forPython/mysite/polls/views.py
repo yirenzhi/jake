@@ -13,20 +13,20 @@ from .models import Question
 #     output = ','.join([q.question_text for q in latest_question_list])
 #     return HttpResponse(output)
 
-# def index(request):
-#     latest_question_list = Question.objects.order_by('-pub_date')[:5]
-#     context = {
-#         'latest_question_list': latest_question_list,
-#     }
-#     return render(request, 'polls/index.html', context)
-
 def index(request):
     latest_question_list = Question.objects.order_by('-pub_date')[:5]
-    template = loader.get_template('polls/index.html')
     context = {
         'latest_question_list': latest_question_list,
     }
-    return HttpResponse(template.render(context,request))
+    return render(request, 'polls/index.html', context)
+
+# def index(request):
+#     latest_question_list = Question.objects.order_by('-pub_date')[:5]
+#     template = loader.get_template('polls/index.html')
+#     context = {
+#         'latest_question_list': latest_question_list,
+#     }
+#     return HttpResponse(template.render(context,request))
 
 
 # def detail(request, question_id):
