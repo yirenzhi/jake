@@ -1,0 +1,6 @@
+1.传递的参数可以通过argv接受
+from sys import argv
+
+script, filename = argv
+
+txt = open(filename)
