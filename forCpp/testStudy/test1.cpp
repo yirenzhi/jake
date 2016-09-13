@@ -64,6 +64,13 @@ extern int getlengthTailRecursion(linkList head,int *num);
 
 extern void stdForeach();
 
+extern  void stdForeach();
+
+extern  void stdLambda();
+
+extern  void stdFunction();
+
+extern  void stdBind();
 struct fle
 {
 	char val;
@@ -114,6 +121,14 @@ int main()
 	//cout<<"长度"<<sizeof(&str)<<endl;
 	//cout<<"长度"<<sizeof(struct fle)<<endl;
 	
+
+	//stdForeach();
+
+	//stdLambda();
+
+	//stdFunction();
+
+	stdBind();
 	while(true){
 
 	}
