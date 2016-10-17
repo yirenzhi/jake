@@ -1,6 +1,7 @@
  #include <iostream>
 #include <vector>
 #include "testThread.h"
+#include "TComplex.h"
  using namespace std;
 
  //************************************
@@ -77,6 +78,13 @@ struct fle
 	int array[];
 };
 
+extern void testcin();
+extern void testif();
+void testVar();
+
+//≤‚ ‘sqlite
+void testSqlite();
+
 int main()
 {
 // 	string get = reverseString("hello");
@@ -128,7 +136,21 @@ int main()
 
 	//stdFunction();
 
-	stdBind();
+	//stdBind();
+
+	//testcin();
+
+	//testif();
+
+// 	TComplex a(2,3), b(18,27);
+// 	TComplex c = a+b;
+// 	c.display();
+// 	TComplex d = c-a;
+// 	d.display();
+
+//	testVar();
+
+	testSqlite();
 	while(true){
 
 	}
